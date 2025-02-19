@@ -1,0 +1,17 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Профиль пользователя</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Профиль пользователя</h1>
+        <p><strong>Имя:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <a href="{% url 'home' %}">Назад на главную</a>
+    </div>
+</body>
+</html>
